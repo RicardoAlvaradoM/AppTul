@@ -1,1 +1,69 @@
+<ion-menu [content]="content">
+  <ion-header >
+    <ion-toolbar color="primary">
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage(ind)" icon-left>
+         <ion-icon name="home"></ion-icon>
+        Inició
+      </button>
+      <button ion-item (click)="openPage(alcalde)" icon-left>
+        <ion-icon name="ios-chatbubbles"></ion-icon>
+        Alcalde en línea
+      </button>
+      <button ion-item (click)="openPage(tramites)" icon-left>
+        <ion-icon name="ios-paper"></ion-icon>
+        Trámites
+      </button>
+      <button ion-item (click)="openPage(qrinfo)" icon-left>
+        <ion-icon name="md-qr-scanner"></ion-icon>
+        QR- Infórmate
+      </button>
+      <button ion-item (click)="openPage(eventos)" icon-left>
+        <ion-icon name="md-calendar"></ion-icon>
+        Eventos
+      </button>
+      <button ion-item (click)="openPage(audiencia)" icon-left>
+        <ion-icon name="ios-people"></ion-icon>
+        Audiencia
+      </button>
+      <button ion-item (click)="openPage(historia)" icon-left>
+        <ion-icon name="logo-youtube"></ion-icon>
+        Videoteca
+      </button>
+      <button ion-item (click)="openPage(turismo)" icon-left>
+        <ion-icon name="ios-planet"></ion-icon>
+        Turismo
+      </button>
+      <button ion-item (click)="openPage(trabajo)" icon-left>
+        <ion-icon name="md-trending-up"></ion-icon>
+        Bolsa de trabajo
+      </button>
+      <button ion-item (click)="openPage(emergencia)" icon-left>
+        <ion-icon name="ios-help-buoy"></ion-icon>
+        Emergencias
+      </button>
+      <button ion-item (click)="openPage(pagoref)" icon-left>
+        <ion-icon name="ios-link"></ion-icon>
+        Pago predial
+      </button>
+      <button ion-item (click)="openPage(pueblos)" icon-left>
+        <ion-icon name="ios-person"></ion-icon>
+        Pueblos indigenas
+      </button>
+      <button ion-item (click)="openPage(feria)" icon-left>
+        <ion-icon name="ios-megaphone"></ion-icon>
+        Feria Tulancingo
+      </button>
+      <button ion-item (click)="openPage(nosotros)" icon-left>
+        <ion-icon name="ios-contacts"></ion-icon>
+        Nosotros
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-nav [root]="rootPage"></ion-nav>
