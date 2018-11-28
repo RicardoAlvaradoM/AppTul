@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController,MenuController} from 'ionic-angular';
+import { IonicPage, NavController, MenuController } from 'ionic-angular';
 
 
 @IonicPage()
@@ -9,11 +9,12 @@ import { IonicPage, NavController,MenuController} from 'ionic-angular';
 })
 export class PrincipalPage {
 
-  constructor(
-    public navCtrl: NavController,
-    private menuCtrl:MenuController) {}
+  constructor(public navCtrl: NavController,
+              private menuCtrl: MenuController) {}
 
-    mostrarMenu(){
-  this.menuCtrl.toggle();
-}
+
+            mostrarMenu(){
+              this.menuCtrl.toggle();
+            }
+
 }

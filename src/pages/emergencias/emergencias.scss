@@ -1,3 +1,62 @@
 page-emergencias {
-
+  .buttonRedond {
+      width:300px;
+      height:300px;
+      border-radius:150px;
+      border:10px solid #666;
+  }
+  .emer{
+    background-image:url('../../assets/emergencias/911.png');
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .bomberos{
+    background-image:url('../../assets/emergencias/bomberos.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:contain;
+    height:100%;
+    width:100%;
+    border: 0px;
+  }
+  .cruz{
+    background-image:url('../../assets/emergencias/cruz.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .transito{
+    background-image:url('../../assets/emergencias/sp.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .sp{
+    background-image:url('../../assets/emergencias/transito.png');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0px;
+    height:100%;
+    width:100%;
+  }
+  .btn0{
+    width: 100%;
+    height: calc(100%/4 - 2*1em - 2*1px);
+    //height: 40%;
+    position: relative;
+    display:block;
+    top: 0px;
+    border: 0px;
+  }
 }

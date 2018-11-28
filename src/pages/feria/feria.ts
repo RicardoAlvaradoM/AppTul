@@ -1,12 +1,7 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component,ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { DomSanitizer } from '@angular/platform-browser';
 
-/**
- * Generated class for the FeriaPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -14,12 +9,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'feria.html',
 })
 export class FeriaPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Content) content: Content;
+  orientation: string;
+  url: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public sanitize: DomSanitizer) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FeriaPage');
+  }
+  urlpaste(){
+    this.url = "http://feria.tulancingo.gob.mx";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
+  }
+  scrollToTop() {
+    this.content.scrollToTop();
   }
 
 }

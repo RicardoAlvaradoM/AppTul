@@ -20,9 +20,13 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/barcode-scanner": "^4.17.0",
     "@ionic-native/core": "~4.17.0",
+    "@ionic-native/http": "^4.17.0",
+    "@ionic-native/in-app-browser": "^4.17.0",
     "@ionic-native/splash-screen": "~4.17.0",
     "@ionic-native/status-bar": "~4.17.0",
+    "@ionic-native/youtube-video-player": "^4.17.0",
     "@ionic/pro": "2.0.3",
     "@ionic/storage": "2.2.0",
     "ionic-angular": "3.9.2",
@@ -35,5 +39,18 @@
     "@ionic/app-scripts": "3.2.1",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-inappbrowser": {},
+      "cordova-plugin-ionic": {
+        "APP_ID": "62abfc20",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "background"
+      },
+      "phonegap-plugin-barcodescanner": {},
+      "cordova-plugin-youtube-video-player": {},
+      "cordova-plugin-advanced-http": {}
+    }
+  }
 }

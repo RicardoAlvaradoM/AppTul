@@ -1,12 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PueblosPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @IonicPage()
 @Component({
@@ -14,12 +8,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pueblos.html',
 })
 export class PueblosPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Content) content: Content;
+  orientation: string;
+  url: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public sanitize: DomSanitizer) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PueblosPage');
+  }
+  urlpaste(){
+    this.url = "http://pueblosindigenas.tulancingo.gob.mx/";
+    return this.sanitize.bypassSecurityTrustResourceUrl(this.url);
+  }
+  scrollToTop() {
+    this.content.scrollToTop();
   }
 
 }

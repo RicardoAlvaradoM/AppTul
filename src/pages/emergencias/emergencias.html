@@ -1,18 +1,26 @@
-<!--
-  Generated template for the EmergenciasPage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>emergencias</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Emergencias</ion-title>
+    <ion-buttons>
+    <button ion-button
+            icon-only
+            menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+  <div class="btn0">
+    <button ion-button (click)="callBomberos()" class="bomberos" block outline full></button>
+    <button ion-button (click)="callPolicia()" class="sp" block outline ></button>
+    <button ion-button (click)="callEmergencia()" class="emer" block outline md></button>
+    <button ion-button (click)="callCruz()" class="cruz" block outline md></button>
+    <button ion-button (click)="callNumbers()" block class="transito" outline ></button>
+  </div>
 </ion-content>

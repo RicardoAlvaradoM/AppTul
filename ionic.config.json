@@ -1,6 +1,8 @@
 {
   "name": "AppTul",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "pro_id": "62abfc20"
 }
